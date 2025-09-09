@@ -663,7 +663,7 @@ def log_manual_buy(
     if interactive:
         check = input(
             f"You are placing a BUY LIMIT for {shares} {ticker} at ${buy_price:.2f}.\n"
-            f"If this is a mistake, type '1': "
+            f"If this is a mistake, type '1' or, just hit Enter: "
         )
         if check == "1":
             print("Returning...")
@@ -768,7 +768,7 @@ def log_manual_sell(
     if interactive:
         reason = input(
             f"""You are placing a SELL LIMIT for {shares_sold} {ticker} at ${sell_price:.2f}.
-If this is a mistake, enter 1. """
+If this is a mistake, enter 1, or hit Enter."""
         )
     if reason == "1":
         print("Returning...")
